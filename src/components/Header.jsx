@@ -7,17 +7,17 @@ export default function Header() {
 
     return (
         <>
-          <header className="sticky bg-gray-800 top-0 z-10 bg-opacity-90 backdrop-filter backdrop-blur-sm">
+          <header className="sticky bg-gray-800 top-0 z-auto bg-opacity-90 backdrop-filter backdrop-blur-sm">
             <div className="container mx-auto px-6 py-4">
                 <div className='flex items-center justify-between'>
                   <Logo />
                     <nav className='hidden md:block'>
                         <ul className="flex space-x-9 mr-10 text-white">
-                            <li><a href="/#" className="hover:text-blue-400 transition-colors">Home</a></li>
-                            <li><a href="/#about" className="hover:text-blue-400 transition-colors">About</a></li>
-                            <li><a href="/#skills" className="hover:text-blue-400 transition-colors">Skills</a></li>
-                            <li><a href="/#projects" className="hover:text-blue-400 transition-colors">Projects</a></li>
-                            <li><a href="/#contact" className="hover:text-blue-400 transition-colors">Contact</a></li>
+                            <li><a href="/#" className="relative hover:text-blue-400 transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">Home</a></li>
+                            <li><a href="/#about" className="relative hover:text-blue-400 transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">About</a></li>
+                            <li><a href="/#skills" className="relative hover:text-blue-400 transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">Skills</a></li>
+                            <li><a href="/#projects" className="relative hover:text-blue-400 transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">Projects</a></li>
+                            <li><a href="/#contact" className="relative hover:text-blue-400 transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">Contact</a></li>
                         </ul>
                     </nav>
                     <button className='md:hidden text-white focus:outline-none'
