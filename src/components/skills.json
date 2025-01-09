@@ -1,0 +1,11 @@
+
+[
+    { "id": "html", "name": "HTML/CSS", "icon": "htmlIcon" },
+    { "id": "javascript", "name": "JavaScript", "icon": "javascriptIcon" },
+    { "id": "react", "name": "React", "icon": "reactIcon" },
+    { "id": "node", "name": "Node.js", "icon": "nodeIcon" },
+    { "id": "express", "name": "Express.js", "icon": "expressIcon" },
+    { "id": "bootstrap", "name": "Bootstrap", "icon": "bootstrapIcon" },
+    { "id": "tailwind", "name": "Tailwind CSS", "icon": "tailwindIcon" },
+    { "id": "git", "name": "Git", "icon": "gitIcon" }
+]

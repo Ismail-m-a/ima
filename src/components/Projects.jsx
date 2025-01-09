@@ -4,7 +4,7 @@ export default function Projects() {
 
     return (
         <>
-            <section id="projects" className="bg-gray-600 py-20">
+            <section id="projects" className="bg-gray-600 py-40">
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
