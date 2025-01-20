@@ -1,0 +1,8 @@
+[
+    {"title": "E-commerce Website", "icon": ["reactIcon", "viteIcon", "nodeIcon"], "description": "A fully functional online store built with React and Node.js"},
+    {"title": "Personal Portfolio", "icon": ["reactIcon", "viteIcon", "nodeIcon"],  "description": "My personal website showcasing my skills and experiences"},
+    {"title": "Book Library", "icon": ["reactIcon", "viteIcon", "nodeIcon"],  "description": "A responsive web application for managing a book library using React and Firebase"},
+    {"title": "Recipe App", "icon": ["reactIcon", "viteIcon", "nodeIcon"],  "description": "A searchable recipe app using React and Edamam API"},
+    {"title": "Cleaning Company Website", "icon": ["reactIcon", "viteIcon", "nodeIcon"],  "description": "Cleaning company website built with React"},
+    {"title": "Chat Application", "icon": ["reactIcon", "viteIcon", "nodeIcon"],  "description": "A real-time chat application using React and Firebase"}
+]

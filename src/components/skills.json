@@ -1,11 +1,17 @@
 
 [
-    { "id": "html", "name": "HTML/CSS", "icon": "htmlIcon" },
-    { "id": "javascript", "name": "JavaScript", "icon": "javascriptIcon" },
-    { "id": "react", "name": "React", "icon": "reactIcon" },
-    { "id": "node", "name": "Node.js", "icon": "nodeIcon" },
-    { "id": "express", "name": "Express.js", "icon": "expressIcon" },
-    { "id": "bootstrap", "name": "Bootstrap", "icon": "bootstrapIcon" },
-    { "id": "tailwind", "name": "Tailwind CSS", "icon": "tailwindIcon" },
-    { "id": "git", "name": "Git", "icon": "gitIcon" }
+    { "id": "html" , "icon": "htmlIcon" },
+    { "id": "css", "icon": "cssIcon" },
+    { "id": "javascript", "icon": "javascriptIcon" },
+    { "id": "react", "icon": "reactIcon" },
+    { "id": "node", "icon": "nodeIcon" },
+    { "id": "express", "icon": "expressIcon" },
+    { "id": "bootstrap", "icon": "bootstrapIcon" },
+    { "id": "tailwind", "icon": "tailwindIcon" },
+    { "id": "git", "icon": "gitIcon" },
+    { "id": "github", "icon": "githubIcon" },
+    { "id": "mysql", "icon": "mysqlIcon" },
+    { "id": "firebase", "icon": "firebaseIcon" },
+    { "id": "npm", "icon": "npmIcon" },
+    { "id": "docker", "icon": "dockerIcon" }
 ]
