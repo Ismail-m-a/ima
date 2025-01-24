@@ -7,8 +7,8 @@ export default function Header() {
 
     return (
         <>
-          <header className="sticky bg-gray-800 top-0 bg-opacity-90 backdrop-filter backdrop-blur-sm shadow transition-all duration-75 ease-in z-[999]">
-            <div className="container mx-auto px-6 py-4">
+          <header className="sticky bg-gray-800 top-0 bg-opacity-90 backdrop-filter backdrop-blur-sm shadow-2xl transition-all duration-75 ease-in z-[999]">
+            <div className="container mx-auto px-6 py-6">
                 <div className='flex items-center justify-between'>
                   <Logo />
                     <nav className='hidden md:block'>

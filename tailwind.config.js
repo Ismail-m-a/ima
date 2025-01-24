@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{js,jsx, ts, tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: { 'width': 'width', },
+    },
   },
+  variants: { extend: { width: ['hover'], }, },
   plugins: [],
 }
 

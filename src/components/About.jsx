@@ -16,7 +16,7 @@ export default function About() {
                             </p>
                             <div className="flex justify-center mt-6">
                                 <button onClick={()=> document.getElementById("contact").scrollIntoView({behavior: "smooth"})} className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-400 hover:bg-blue-500 transition-colors">
-                                    Contact Me
+                                    Download CV
                                 </button>  
                             </div>
                         </div>
