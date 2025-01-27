@@ -1,6 +1,7 @@
 import {useState }from 'react';
 // import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,25 +22,44 @@ export default function Header() {
                         </ul>
                     </nav>
                     <button className='md:hidden text-white focus:outline-none'
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                            <motion.path
+                            d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            animate={{
+                                d: isMenuOpen
+                                ? "M6 18L18 6M6 6l12 12" // Close icon (X)
+                                : "M4 6h16M4 12h16M4 18h16", // Hamburger icon
+                            }}
+                            transition={{ duration: 0.4, ease: "easeInOut" }}
+                            />
                         </svg>
-
                     </button>
                 </div>
-                {isMenuOpen && (
-                    <nav className='mt-4 md:hidden'>
-                        <ul className="flex flex-col space-y-2 text-white">
-                            <li><a href="/#" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-                            <li><a href="#about" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>About</a></li>
-                            <li><a href="#skills" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
-                            <li><a href="#projects" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
-                            <li><a href="#contact" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
-                        </ul>
-                    </nav>
-                )}
+                <AnimatePresence>
+                    {isMenuOpen && (
+                        <motion.nav 
+                            className='mt-4 md:hidden'
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <ul className="flex flex-col space-y-2 text-white">
+                                <li><a href="/#" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+                                <li><a href="#about" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>About</a></li>
+                                <li><a href="#skills" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
+                                <li><a href="#projects" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
+                                <li><a href="#contact" className="block hover:text-blue-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+                            </ul>
+                        </motion.nav>
+                    )}
+                </AnimatePresence>
             </div>
           </header>  
         </>
